@@ -28,7 +28,10 @@ lookup_all_df <- tibble::tribble(
   3,          5,             555,
 ) |>
   # add a rowcode required by SuSo
-	dplyr::mutate(rowcode = dplyr::row_number())
+	dplyr::mutate(
+    rowcode = dplyr::row_number(),
+    .before = 1
+  )
 
 # ------------------------------------------------------------------------------
 # save to disk
