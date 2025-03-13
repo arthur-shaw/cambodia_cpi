@@ -3,7 +3,7 @@
 * ==============================================================================
 
 * provide the path to the project root
-global proj_root "C:/Users/WB393438/cambodia_cpi/"
+global proj_root ""
 
 * set paths to other folders
 do "${proj_root}/_set_proj_folders.do"
